@@ -1,0 +1,37 @@
+<!doctype html>
+	<html>
+	<head> 
+		<title>Note taker App</title>
+		<link rel="stylesheet" href="note.css">
+	</head>
+	<body>
+		<div class="container">
+		<h1 style="font-size:50px;">Note Taker</h1>
+		<h3 style="color:green;font-size:30px;">Add another note:</h3>
+		<label for="Note" style="font-size:20px;font-weight:bold;">Note:</label>
+		<input type="textarea" id="input-el" placeholder="write your notes here.."> <br>
+		<button id="addNote" onclick="addNewNote()" style="background-color:green; border: none;">ADD NOTE</button>
+		</div>
+		<div id="card" class="row">
+			
+			<p id="box">No notes added yet..</p>
+		
+		</div>
+
+
+		<!--<button id="myBtn">Open Modal</button>-->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="detailNotes"></p>
+  </div>
+
+</div>
+		<script src="note.js"></script>
+		
+	</body>
+	</html>
